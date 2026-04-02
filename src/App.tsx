@@ -74,7 +74,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#050505] text-white overflow-x-hidden font-sans selection:bg-rose-400/30">
+    <div className="min-h-screen bg-[#0a0608] text-white overflow-x-hidden font-sans selection:bg-rose-400/30">
       <div className="fixed inset-0 noise-bg z-[999]" />
       
       {/* Premium Progress Bar */}
@@ -100,7 +100,7 @@ export default function App() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0, y: -100, filter: "blur(20px)" }}
             transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-            className="fixed inset-0 z-50 flex items-center justify-center bg-[#050505] px-4 py-8"
+            className="fixed inset-0 z-50 flex items-center justify-center bg-[#0a0608] px-4 py-8"
           >
             <div className="max-w-2xl w-full text-center space-y-8 md:space-y-16">
               <div className="relative inline-block">
@@ -275,7 +275,7 @@ export default function App() {
             {/* Hero Section - Split Editorial Layout */}
             <header className="relative min-h-screen flex flex-col lg:flex-row overflow-hidden">
               {/* Left Pane - Visuals */}
-              <div className="relative w-full lg:w-1/2 h-[34vh] sm:h-[40vh] lg:h-screen bg-[#080808] border-r border-white/5 overflow-hidden order-2 lg:order-1">
+              <div className="relative w-full lg:w-1/2 h-[34vh] sm:h-[40vh] lg:h-screen bg-[#0c0707] border-r border-white/5 overflow-hidden order-2 lg:order-1">
                 <motion.div 
                   style={{ y: backgroundY }}
                   className="absolute inset-0 z-0"
