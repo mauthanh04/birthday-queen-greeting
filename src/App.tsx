@@ -291,7 +291,7 @@ export default function App() {
                     transition={{ duration: 2, ease: "easeOut" }}
                     className="relative"
                   >
-                    <Crown className="w-20 h-20 sm:w-32 sm:h-32 text-amber-500/20 absolute -top-10 -left-10 sm:-top-16 sm:-left-16 rotate-[-15deg] blur-sm" />
+                    <Crown className="w-20 h-20 sm:w-32 sm:h-32 text-amber-500/60 absolute -top-10 -left-10 sm:-top-16 sm:-left-16 rotate-[-15deg] drop-shadow-[0_0_12px_rgba(251,191,36,0.25)]" />
                     <h2 className="text-[20vw] sm:text-[15vw] font-serif font-black text-stroke italic leading-none select-none">
                       2026
                     </h2>
