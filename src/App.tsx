@@ -147,7 +147,7 @@ export default function App() {
                         transition={{ duration: 2, repeat: Infinity }}
                         className="text-[7px] sm:text-[8px] font-black tracking-[0.25em] sm:tracking-[0.4em] text-rose-400 uppercase"
                       >
-                        Touch to Scan
+                        Chạm để quét
                       </motion.span>
                       <motion.div 
                         initial={{ opacity: 0, scale: 0.5 }}
@@ -258,7 +258,7 @@ export default function App() {
                       onClick={handleUnlock}
                       className="w-full py-5 sm:py-7 bg-white text-black font-black text-base sm:text-xl uppercase tracking-[0.25em] sm:tracking-[0.5em] shadow-[0_0_60px_rgba(255,255,255,0.1)] hover:scale-[1.02] active:scale-95 transition-all"
                     >
-                      Enter Palace
+                      Vào hoàng cung
                     </button>
                   </motion.div>
                 )}
