@@ -7,7 +7,7 @@
 }
 
 body {
-  @apply bg-[#ffd9e8] text-white font-sans antialiased selection:bg-rose-400/30;
+  @apply bg-[#ffd9e8] text-[#00664E] font-sans antialiased selection:bg-[#00664E]/20;
 }
 
 .royal-gradient {
@@ -15,11 +15,11 @@ body {
 }
 
 .gold-text {
-  @apply text-white;
+  @apply text-[#00664E];
 }
 
 .glass-card {
-  @apply bg-white/[0.03] backdrop-blur-2xl border border-white/10;
+  @apply bg-white/[0.62] backdrop-blur-xl border border-[#00664E]/25 shadow-[0_10px_30px_rgba(0,102,78,0.12)];
 }
 
 @keyframes marquee {
@@ -32,7 +32,7 @@ body {
 }
 
 .text-stroke {
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.35);
+  -webkit-text-stroke: 1px rgba(0, 102, 78, 0.35);
   color: transparent;
 }
 
@@ -41,4 +41,5 @@ body {
   opacity: 0.05;
   pointer-events: none;
 }
+
 
