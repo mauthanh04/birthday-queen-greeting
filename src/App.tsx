@@ -147,7 +147,7 @@ export default function App() {
                         transition={{ duration: 2, repeat: Infinity }}
                         className="text-[7px] sm:text-[8px] font-black tracking-[0.25em] sm:tracking-[0.4em] text-amber-500 uppercase"
                       >
-                        Touch to Scan
+                        Chạm để quét
                       </motion.span>
                       <motion.div 
                         initial={{ opacity: 0, scale: 0.5 }}
@@ -170,10 +170,10 @@ export default function App() {
                   animate={{ opacity: 1, y: 0 }}
                   className="text-[8px] sm:text-[10px] font-black tracking-[0.45em] sm:tracking-[1.2em] text-amber-500/40 uppercase block"
                 >
-                  Security Protocol 7.2
+                  Giao thức bảo mật 7.2
                 </motion.span>
                 <h1 className="text-4xl sm:text-5xl md:text-7xl font-serif font-bold gold-text italic tracking-tight leading-[0.95]">
-                  The Queen's Vault
+                  Kho báu của Nữ Hoàng
                 </h1>
               </div>
 
@@ -251,14 +251,14 @@ export default function App() {
                       >
                         <CheckCircle2 className="w-14 h-14 sm:w-20 sm:h-20 text-green-500 mx-auto" />
                       </motion.div>
-                      <p className="text-2xl sm:text-3xl font-serif font-bold text-white italic">Access Granted.</p>
-                      <p className="text-amber-100/30 text-[9px] sm:text-[10px] uppercase tracking-[0.35em] sm:tracking-[0.6em] font-black">Welcome, Your Majesty.</p>
+                      <p className="text-2xl sm:text-3xl font-serif font-bold text-white italic">Xác thực thành công.</p>
+                      <p className="text-amber-100/30 text-[9px] sm:text-[10px] uppercase tracking-[0.35em] sm:tracking-[0.6em] font-black">Kính chào Nữ Hoàng.</p>
                     </div>
                     <button
                       onClick={handleUnlock}
                       className="w-full py-5 sm:py-7 bg-white text-black font-black text-base sm:text-xl uppercase tracking-[0.25em] sm:tracking-[0.5em] shadow-[0_0_60px_rgba(255,255,255,0.1)] hover:scale-[1.02] active:scale-95 transition-all"
                     >
-                      Enter Palace
+                      Vào hoàng cung
                     </button>
                   </motion.div>
                 )}
@@ -299,8 +299,8 @@ export default function App() {
                 </div>
 
                 <div className="absolute bottom-4 left-4 sm:bottom-12 sm:left-12 z-30 space-y-1 sm:space-y-2">
-                  <span className="text-amber-500 text-[8px] sm:text-[10px] font-black uppercase tracking-[0.35em] sm:tracking-[0.6em] block">Volume 01</span>
-                  <span className="text-white/40 text-[8px] sm:text-[10px] uppercase tracking-[0.25em] sm:tracking-[0.4em]">Birthday Edition</span>
+                  <span className="text-amber-500 text-[8px] sm:text-[10px] font-black uppercase tracking-[0.35em] sm:tracking-[0.6em] block">Tập 01</span>
+                  <span className="text-white/40 text-[8px] sm:text-[10px] uppercase tracking-[0.25em] sm:tracking-[0.4em]">Phiên bản sinh nhật</span>
                 </div>
               </div>
 
@@ -319,7 +319,7 @@ export default function App() {
                       transition={{ duration: 1, delay: 0.5 }}
                       className="h-px bg-amber-500" 
                     />
-                    <h3 className="text-amber-500 text-[10px] sm:text-xs font-black uppercase tracking-[0.45em] sm:tracking-[0.8em]">Happy Birthday</h3>
+                    <h3 className="text-amber-500 text-[10px] sm:text-xs font-black uppercase tracking-[0.45em] sm:tracking-[0.8em]">Chúc mừng sinh nhật</h3>
                   </div>
 
                   <h1 className="text-4xl sm:text-6xl md:text-[8rem] font-serif font-bold gold-text leading-[0.95] sm:leading-[0.9] italic tracking-tighter">
@@ -344,7 +344,7 @@ export default function App() {
                   transition={{ delay: 2, duration: 1 }}
                   className="absolute bottom-4 right-4 sm:bottom-12 sm:right-12 flex flex-col items-end gap-4 hidden sm:flex"
                 >
-                  <span className="text-[9px] uppercase tracking-[0.6em] text-amber-500/40 font-black">Scroll to Explore</span>
+                  <span className="text-[9px] uppercase tracking-[0.6em] text-amber-500/40 font-black">Cuộn để khám phá</span>
                   <div className="w-px h-24 bg-gradient-to-b from-amber-500/50 to-transparent" />
                 </motion.div>
               </div>
@@ -355,9 +355,9 @@ export default function App() {
               <div className="flex animate-marquee">
                 {[...Array(10)].map((_, i) => (
                   <div key={i} className="flex items-center gap-6 sm:gap-12 px-4 sm:px-6">
-                    <span className="text-2xl sm:text-4xl md:text-6xl font-serif font-black text-stroke uppercase italic">Slay Queen</span>
+                    <span className="text-2xl sm:text-4xl md:text-6xl font-serif font-black text-stroke uppercase italic">Nữ hoàng tỏa sáng</span>
                     <Sparkles className="w-5 h-5 sm:w-8 sm:h-8 text-amber-500/20" />
-                    <span className="text-2xl sm:text-4xl md:text-6xl font-serif font-black gold-text uppercase italic">Happy Birthday</span>
+                    <span className="text-2xl sm:text-4xl md:text-6xl font-serif font-black gold-text uppercase italic">Chúc mừng sinh nhật</span>
                     <Crown className="w-5 h-5 sm:w-8 sm:h-8 text-amber-500/20" />
                   </div>
                 ))}
@@ -368,7 +368,7 @@ export default function App() {
             <section className="max-w-7xl mx-auto px-4 sm:px-6 py-20 sm:py-48">
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 sm:gap-24 items-start mb-16 sm:mb-32">
                 <div className="lg:col-span-7 space-y-5 sm:space-y-8">
-                  <span className="text-amber-500 text-[10px] font-black uppercase tracking-[0.6em]">Section 01 / Testimonials</span>
+                  <span className="text-amber-500 text-[10px] font-black uppercase tracking-[0.6em]">Mục 01 / Lời chúc</span>
                   <h2 className="text-4xl sm:text-6xl md:text-8xl font-serif font-bold italic leading-none">
                     Lời chúc từ <br /> <span className="gold-text">"Hội 12 người"</span>
                   </h2>
@@ -399,7 +399,7 @@ export default function App() {
                       “{msg}”
                     </p>
                     <div className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                      <span className="text-[9px] uppercase tracking-[0.4em] text-amber-500/60 font-black">Verified Message</span>
+                      <span className="text-[9px] uppercase tracking-[0.4em] text-amber-500/60 font-black">Lời chúc đã xác nhận</span>
                     </div>
                   </motion.div>
                 ))}
@@ -430,7 +430,7 @@ export default function App() {
                       whileInView={{ letterSpacing: ["0.5em", "1.5em"] }}
                       className="text-xs uppercase text-amber-500 font-black block"
                     >
-                      The Final Word
+                      Lời nhắn cuối
                     </motion.span>
                     <p className="text-2xl sm:text-4xl md:text-7xl font-light text-amber-100/90 leading-[1.15] sm:leading-[1.1] tracking-tight">
                       Chị không chỉ là chị iu… <br />
@@ -450,7 +450,7 @@ export default function App() {
                     className="pt-12 sm:pt-32"
                   >
                     <h3 className="text-4xl sm:text-7xl md:text-[12rem] font-serif font-black tracking-tighter gold-text leading-[0.85] sm:leading-[0.8] uppercase italic select-none">
-                      Long Live <br /> The Queen
+                      Nữ hoàng <br /> mãi đỉnh
                     </h3>
                   </motion.div>
                 </motion.div>
@@ -461,8 +461,8 @@ export default function App() {
             <footer className="py-16 sm:py-32 px-6 sm:px-12 border-t border-white/5 relative overflow-hidden">
               <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 sm:gap-12 text-center md:text-left">
                 <div className="flex flex-col gap-2 items-center md:items-start">
-                  <span className="text-[10px] uppercase tracking-[0.8em] text-amber-500 font-black">Royal Edition</span>
-                  <span className="text-[9px] uppercase tracking-[0.4em] text-white/20">© 2026 All Rights Reserved</span>
+                  <span className="text-[10px] uppercase tracking-[0.8em] text-amber-500 font-black">Phiên bản hoàng gia</span>
+                  <span className="text-[9px] uppercase tracking-[0.4em] text-white/20">© 2026 Bảo lưu mọi quyền</span>
                 </div>
                 
                 <div className="flex gap-6 sm:gap-8">
@@ -472,7 +472,7 @@ export default function App() {
                 </div>
 
                 <div className="text-right flex flex-col gap-2 items-center md:items-end">
-                  <span className="text-[10px] uppercase tracking-[0.4em] text-white/40">Curated with love by</span>
+                  <span className="text-[10px] uppercase tracking-[0.4em] text-white/40">Được thực hiện với yêu thương bởi</span>
                   <span className="text-[10px] uppercase tracking-[0.6em] text-amber-500 font-black">Hội 12 Người</span>
                 </div>
               </div>
