@@ -4,18 +4,19 @@ import { Crown, Heart, Sparkles, Star, Quote, Lock, Unlock, CheckCircle2, Finger
 import confetti from "canvas-confetti";
 
 const messages = [
-  "Chị lúc nào cũng xinh đẹp hết phần thiên hạ luôn á 😍",
-  "Vibe của chị đúng kiểu cool ngầu, nhìn là thấy cuốn 😎",
-  "Chúc nữ hoàng tuổi mới ngày càng slayyyy hơn nha 💅✨",
-  "Nhan sắc này đúng chuẩn ‘đỉnh cao’, không ai đọ lại nổi 👑",
-  "Chị vừa xinh vừa chất, đúng kiểu ‘girl crush’ luôn á 💖",
-  "Ra đường là spotlight tự chiếu vào chị luôn đó 🎉",
-  "Chúc chị ngày càng quyền lực, khí chất ngút trời 🔥",
-  "Đã xinh rồi mà còn thần thái nữa thì ai chịu nổi 😆",
-  "Nữ hoàng thì chỉ có thể ngày càng tỏa sáng thôi ✨",
-  "Chúc chị luôn tự tin và ‘cháy’ hết mình nha 💥",
-  "Đẹp – ngầu – sang, chị hội tụ đủ luôn rồi 😍",
-  "Chị xứng đáng là phiên bản đỉnh nhất của chính mình 💯",
+  { text: "Chị lúc nào cũng xinh đẹp hết phần thiên hạ luôn á 😍", author: "Minh Đức" },
+  { text: "Vibe của chị đúng kiểu cool ngầu, nhìn là thấy cuốn 😎", author: "Anh Thơ" },
+  { text: "Chúc nữ hoàng tuổi mới ngày càng slayyyy hơn nha 💅✨", author: "Nguyên Giáp" },
+  { text: "Nhan sắc này đúng chuẩn ‘đỉnh cao’, không ai đọ lại nổi 👑", author: "Quang Thành" },
+  { text: "Chị vừa xinh vừa chất, đúng kiểu ‘girl crush’ luôn á 💖", author: "Lưu Hương" },
+  { text: "Ra đường là spotlight tự chiếu vào chị luôn đó 🎉", author: "Văn Hinh" },
+  { text: "Chúc chị ngày càng quyền lực, khí chất ngút trời 🔥", author: "Kiều Linh" },
+  { text: "Đã xinh rồi mà còn thần thái nữa thì ai chịu nổi 😆", author: "Mậu Thành" },
+  { text: "Nữ hoàng thì chỉ có thể ngày càng tỏa sáng thôi ✨", author: "Lưu Dũng" },
+  { text: "Chúc chị luôn tự tin và ‘cháy’ hết mình nha 💥", author: "Xuân Sơn" },
+  { text: "Đẹp – ngầu – sang, chị hội tụ đủ luôn rồi 😍", author: "Quỳnh Như" },
+  { text: "Chị xứng đáng là phiên bản đỉnh nhất của chính mình 💯", author: "Anh Tú" },
+  { text: "chúc mừng sinh nhật chị iu 🎂💖", author: "Thùy Dương" },
 ];
 
 export default function App() {
@@ -333,7 +334,7 @@ export default function App() {
                     </p>
                     
                     <div className="flex items-center gap-6">
-                      <span className="text-[9px] sm:text-[10px] uppercase tracking-[0.3em] sm:tracking-[0.4em] text-rose-400/40 font-black">From Hội 12 Người</span>
+                      <span className="text-[9px] sm:text-[10px] uppercase tracking-[0.3em] sm:tracking-[0.4em] text-rose-400/40 font-black">From Hội 13 Người</span>
                     </div>
                   </div>
                 </motion.div>
@@ -370,7 +371,7 @@ export default function App() {
                 <div className="lg:col-span-7 space-y-5 sm:space-y-8">
                   <span className="text-rose-400 text-[10px] font-black uppercase tracking-[0.6em]">Section 01 / Testimonials</span>
                   <h2 className="text-4xl sm:text-6xl md:text-8xl font-serif font-bold italic leading-none">
-                    Lời chúc từ <br /> <span className="gold-text">"Hội 12 người"</span>
+                    Lời chúc từ <br /> <span className="gold-text">"Hội 13 người"</span>
                   </h2>
                 </div>
                 <div className="lg:col-span-5 pt-4 sm:pt-12">
@@ -392,11 +393,11 @@ export default function App() {
                   >
                     <div className="absolute top-0 left-0 w-1 h-0 bg-rose-400 group-hover:h-full transition-all duration-700" />
                     <div className="flex justify-between items-start mb-8 sm:mb-12">
-                      <span className="font-mono text-[9px] text-rose-400/40 tracking-[0.4em]">MSG_REF_{String(index + 1).padStart(3, '0')}</span>
+                      <span className="font-mono text-[9px] text-rose-400/40 tracking-[0.15em] uppercase">{msg.author}</span>
                       <Quote className="w-5 h-5 text-rose-400/10 group-hover:text-rose-400/30 transition-colors" />
                     </div>
                     <p className="text-base sm:text-xl text-rose-50/70 leading-relaxed font-light italic group-hover:text-white transition-colors">
-                      “{msg}”
+                      “{msg.text}”
                     </p>
                     <div className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                       <span className="text-[9px] uppercase tracking-[0.4em] text-rose-400/60 font-black">Verified Message</span>
@@ -473,7 +474,7 @@ export default function App() {
 
                 <div className="text-right flex flex-col gap-2 items-center md:items-end">
                   <span className="text-[10px] uppercase tracking-[0.4em] text-white/40">Curated with love by</span>
-                  <span className="text-[10px] uppercase tracking-[0.6em] text-rose-400 font-black">Hội 12 Người</span>
+                  <span className="text-[10px] uppercase tracking-[0.6em] text-rose-400 font-black">Hội 13 Người</span>
                 </div>
               </div>
               
