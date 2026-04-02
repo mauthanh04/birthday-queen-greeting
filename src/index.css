@@ -7,7 +7,7 @@
 }
 
 body {
-  @apply bg-[#0a0608] text-white font-sans antialiased selection:bg-rose-400/30;
+  @apply bg-[#ffd9e8] text-white font-sans antialiased selection:bg-rose-400/30;
 }
 
 .royal-gradient {
@@ -15,7 +15,7 @@ body {
 }
 
 .gold-text {
-  @apply bg-clip-text text-transparent bg-gradient-to-b from-rose-100 via-rose-400 to-rose-500;
+  @apply text-white;
 }
 
 .glass-card {
@@ -32,7 +32,7 @@ body {
 }
 
 .text-stroke {
-  -webkit-text-stroke: 1px rgba(251, 191, 36, 0.3);
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.35);
   color: transparent;
 }
 
@@ -41,3 +41,4 @@ body {
   opacity: 0.05;
   pointer-events: none;
 }
+
